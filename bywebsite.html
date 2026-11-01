@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BetterYapper</title>
+    <link rel="icon" href="BetterYapper-Logo.png">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #101116;
+            color: #fff;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 22px;
+            padding: 24px;
+        }
+
+        .logo {
+            width: 110px;
+            height: 110px;
+            object-fit: contain;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 32px;
+            font-weight: 600;
+        }
+
+        .buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            width: 220px;
+        }
+
+        .button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 13px 18px;
+            border-radius: 8px;
+            color: white;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 600;
+            transition: background 0.15s ease, transform 0.15s ease;
+        }
+
+        .button:hover {
+            transform: translateY(-2px);
+        }
+
+        .download {
+            background: #3978ed;
+        }
+
+        .download:hover {
+            background: #4b89ff;
+        }
+
+        .github {
+            background: #292a32;
+        }
+
+        .github:hover {
+            background: #383943;
+        }
+
+        .yapper {
+            background: #f28c28;
+        }
+
+        .yapper:hover {
+            background: #ff9b38;
+        }
+
+        .button svg {
+            width: 19px;
+            height: 19px;
+            fill: currentColor;
+            flex-shrink: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="container">
+        <img class="logo" src="BetterYapper-Logo.png" alt="BetterYapper Logo">
+
+        <h1>BetterYapper</h1>
+
+        <div class="buttons">
+            <a class="button download" href="BetterYapper.crx" download>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M12 3a1 1 0 0 1 1 1v9.59l3.3-3.3a1 1 0 1 1 1.4 1.42l-5 5a1 1 0 0 1-1.4 0l-5-5a1 1 0 1 1 1.4-1.42l3.3 3.3V4a1 1 0 0 1 1-1ZM5 19a1 1 0 0 1 1-1h12a1 1 0 1 1 0 2H6a1 1 0 0 1-1-1Z"/>
+                </svg>
+                Download
+            </a>
+
+            <a class="button github" href="https://github.com/AnAlienDude/betteryapper" target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M12 .9a11.1 11.1 0 0 0-3.51 21.63c.55.1.76-.24.76-.54v-2.1c-3.1.67-3.75-1.32-3.75-1.32-.5-1.28-1.23-1.62-1.23-1.62-1.01-.69.08-.68.08-.68 1.12.08 1.71 1.15 1.71 1.15 1 1.7 2.62 1.21 3.26.93.1-.72.39-1.21.71-1.49-2.48-.28-5.09-1.24-5.09-5.52 0-1.22.44-2.21 1.15-2.99-.12-.28-.5-1.42.11-2.95 0 0 .94-.3 3.05 1.14a10.6 10.6 0 0 1 5.55 0c2.11-1.44 3.05-1.14 3.05-1.14.61 1.53.23 2.67.11 2.95.72.78 1.15 1.77 1.15 2.99 0 4.29-2.61 5.23-5.1 5.51.4.35.76 1.03.76 2.08v3.06c0 .3.2.65.77.54A11.1 11.1 0 0 0 12 .9Z"/>
+                </svg>
+                GitHub
+            </a>
+
+            <a class="button yapper" href="https://yapin.gg/invite/GT6SAxCVZX" target="_blank" rel="noopener noreferrer">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M12 2C6.48 2 2 6.03 2 11c0 2.4 1.04 4.57 2.75 6.17L4 22l5.14-2.14c.91.25 1.87.38 2.86.38 5.52 0 10-4.03 10-9S17.52 2 12 2Zm-4 10a1.25 1.25 0 1 1 0-2.5A1.25 1.25 0 0 1 8 12Zm4 0a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5Zm4 0a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5Z"/>
+                </svg>
+                Yapper
+            </a>
+        </div>
+    </main>
+</body>
+</html>
